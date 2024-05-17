@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleccion Personaje</title>
+    <link rel="stylesheet" href="Styles/Style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="split-screen">
+            <div class="player" id="player1">
+                <h2>Jugador 1</h2>
+                <div class="buttons">
+                    <button id="Goku"   onclick="selectImage('player1', '1', 'https://dragonball-api.com/characters/goku_normal.webp')"><img src="Imagenes/DAYT2F5NUNB7VPAFKUPHNDXVQA.avif" alt="Imagen 1"></button>
+                    <button id="Bardock" onclick="selectImage('player1', '18', 'https://dragonball-api.com/characters/Bardock_Artwork.webp')"><img src="Imagenes/b2.png" alt="Imagen 2"></button>
+                    <button id="Freezer"    onclick="selectImage('player1', '5', 'https://dragonball-api.com/characters/Freezer.webp')"><img src="Imagenes/Freezer_render_.webp" alt="Imagen 3"></button>
+                    <button id="Majin" onclick="selectImage('player1', '32', 'https://dragonball-api.com/characters/BuuGordo_Universo7.webp')"><img src="Imagenes/Majin.jpg" alt="Imagen 4"></button>
+                    <button id="Vegeta" onclick="selectImage('player1', '2', 'https://dragonball-api.com/characters/vegeta_normal.webp')"><img src="Imagenes/v2.jpg" alt="Imagen 5"></button>
+                </div>
+            </div>
+            <div class="player" id="player2">
+                <h2>Jugador 2</h2>
+                <div class="buttons">
+                    <button id="Goku2" onclick="selectImage2('player2', '1', 'https://dragonball-api.com/characters/goku_normal.webp')"><img src="Imagenes/DAYT2F5NUNB7VPAFKUPHNDXVQA.avif" alt="Imagen 1"></button>
+                    <button id="Bardock2" onclick="selectImage2('player2', '18', 'https://dragonball-api.com/characters/Bardock_Artwork.webp')"><img src="Imagenes/b2.png" alt="Imagen 2"></button>
+                    <button id="Freezer2" onclick="selectImage2('player2', '5', 'https://dragonball-api.com/characters/Freezer.webp')"><img src="Imagenes/Freezer_render_.webp" alt="Imagen 3"></button>
+                    <button id="Majin2" onclick="selectImage2('player2', '32', 'https://dragonball-api.com/characters/BuuGordo_Universo7.webp')"><img src="Imagenes/Majin.jpg" alt="Imagen 4"></button>
+                    <button id="Vegeta2" onclick="selectImage2('player2', '2', 'https://dragonball-api.com/characters/vegeta_normal.webp')"><img src="Imagenes/v2.jpg" alt="Imagen 5"></button>
+                </div>
+            </div>
+        </div>
+        <div class="image-containers">
+            <div id="imageContainer"></div>
+            <div id="imageContainer2"></div>
+        </div>
+
+        <div class="player-buttons">
+            <button onclick="confirmSelection('player1')">Listo Jugador 1</button>
+            <button onclick="confirmSelection('player2')">Listo Jugador 2</button>
+        </div>
+    </div>
+    <script src="Scripts/Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="Styles/StylePlaneta.css">
+</head>
+<body>
+    <div class="container">
+        <div class="split-screen">
+            <div class="player" id="player1">
+                <h2>Seleccionar Un Planeta</h2>
+                <div class="buttons">
+                    <button id="Goku"   onclick="selectImage('player1', '1', 'https://dragonball-api.com/planetas/Namek_U7.webp')"></button>
+                    <button id="Bardock" onclick="selectImage('player1', '2', 'https://dragonball-api.com/planetas/Tierra_Dragon_Ball_Z.webp')"></button>
+                    <button id="Freezer"    onclick="selectImage('player1', '7', 'https://dragonball-api.com/planetas/PlanetYardrat.webp')"></button>
+                    <button id="Majin" onclick="selectImage('player1', '3', 'https://dragonball-api.com/planetas/Planeta_Vegeta_en_Dragon_Ball_Super_Broly.webp')"></button>
+                    <button id="Vegeta" onclick="selectImage('player1', '11', 'https://dragonball-api.com/planetas/Planeta_del_Kaio_del_Norte.webp')"></button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="image-containers">
+            <div id="imageContainer"></div>
+            <div id="imageContainer2"></div>
+        </div>
+
+        <div class="player-buttons">
+            <button onclick="confirmSelection('player1')">Listo!</button>
+        </div>
+    </div>
+    <script src="Scripts/ScriptPlaneta.js"></script>
+</body>
+</html>

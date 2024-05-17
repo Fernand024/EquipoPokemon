@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batalla</title>
+  <link rel="stylesheet" href="Styles/StyleBatalla.css">
+</head>
+<body>
+  <div id="gameOver">
+    <div>
+        <h1>Juego terminado</h1>
+        <button id="menuButton">Menu</button>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="left-side">
+      <!-- Contenido izquierdo existente -->
+      <div class="health-bar-outer">
+        <div class="health-bar-inner" id="Vida1"></div>
+      </div>
+      <div class="ki-bar-outer">
+        <div class="ki-bar-inner" id="Ki1"></div>
+      </div>
+      <img src="Imagenes/156215-ezgif.com-crop.png" alt="Personaje izquierdo" class="character">
+      <div class="options-container">
+        <div class="options-box">
+          <div class="options">
+            <button onclick="showAttackOptions()">Atacar</button>
+            <button onclick="Defensa()" id="BtnDefensa">Defenderse</button>
+            <button onclick="CargarKi1()">Cargar Ki</button>
+            <button onclick="AcabarTurno1()">Acabar Turno</button>
+          </div>
+          <div class="attack-options" style="display: none;">
+            <button onclick="Golpear()" id="BtnGolpe">Golpe</button>
+            <button onclick="Rafaga()" id="BtnRafaga">Rafa De Ki</button>
+            <button onclick="AtaqueC()" id="BtnCargado">Ataque Cargado</button>
+            <button onclick="OcultarBoption()">Volver</button>
+          </div>
+        </div>
+        <div class="player-label player1-label">Player1</div>
+      </div>
+    </div>
+    <div class="right-side">
+      <div class="health-bar-outer right-health">
+        <div class="health-bar-inner" id="Vida2"></div>
+      </div>
+      <img src="Imagenes/BardockIzquierda.png" alt="Personaje derecho" class="character right-character" id="Segundo">
+      <div class="options-container right-options">
+        <div class="options-box right-options-box">
+          <div class="options2">
+            <button onclick="showAttackOptions2()">Atacar</button>
+            <button onclick="Defensa2()">Defenderse</button>
+            <button>Cargar Ki</button>
+            <button onclick="AcabarTurno2()">Acabar Turno</button>
+          </div>
+          <div class="attack-options2" style="display: none;">
+            <button onclick="Golpear2()">Golpe</button>
+            <button onclick="Rafaga2()">Rafa De Ki</button>
+            <button onclick="AtaqueC2()">Ataque Cargado</button>
+          </div>
+        </div>
+        <div class="player-label right-player-label player2-label">Player2</div>
+      </div>
+      <div class="ki-bar-outer right-ki">
+        <div class="ki-bar-inner" id="Ki2"></div>
+      </div>
+    </div>
+  </div>
+  <script src="Scripts/ScriptBatalla.js"></script>
+</body>
+</html>
